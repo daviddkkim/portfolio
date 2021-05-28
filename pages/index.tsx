@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/header";
 import Card from "../components/card";
 import styles from "../styles/Home.module.scss";
-
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -19,18 +19,14 @@ export default function Home() {
         <h3>I'm David, a Product Designer on InfluxData.</h3>
         <p> So far, I've: </p>
         <div className={styles.list}> 
-        <Card theme='dark'>Led the development of an open-source design system &#8594;</Card>
-        <Card theme='dark'>Desinged to improve collaboration within engineering teams &#8594;</Card>
-        <Card theme='dark'>Improved the developer experience of a highly technical platform &#8594;</Card>
-        <div className={styles.gradientBackground}>
-        </div>
+          <div className={styles.gradientBackground}/>
+          <Card theme='dark'>Led the development of an open-source design system &#8594;</Card>
+          <Card theme='dark'>Desinged to improve collaboration within engineering teams &#8594;</Card>
+          <Card theme='dark'>Improved the developer experience of a highly technical platform &#8594;</Card>
         </div>
        
       </main>
-
-      <footer>
-        <div>Made with ❤️ by David Kim</div>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }

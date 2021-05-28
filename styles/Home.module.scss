@@ -1,5 +1,4 @@
 .main {
-  height: 100vh;
   margin: 0 32px;
 }
 
@@ -13,10 +12,10 @@
 
 .gradientBackground {
   position:absolute;
-  top: 50px;
+  top: 100px;
   background: conic-gradient( from 230.29deg at 51.63% 52.16%, #2400ff 0deg, #0087ff 67.5deg, #ff1d7a 198.75deg, #f5381b 251.25deg, #ff5335 301.88deg, #691eff 360deg );
-  filter: blur(150px);
-  -webkit-filter: blur(150px);
+  filter: blur(300px);
+  -webkit-filter: blur(300px);
   height: 100%;
   width: 100%;
 } 
