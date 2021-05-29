@@ -11,6 +11,23 @@
     width: 100%;
     padding: 16px;
     border-radius: 4px;
-    background-color: rgba(0,0,0, 0.1);
+    background-color: rgba(255,255,255, 0.07);
     backdrop-filter: blur(20px);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+
+.card-link {
+    &:after {
+        content: '→';
+    }
+    &:hover{
+      cursor:pointer;
+      background-color: rgba(255,255,255, 0.1);
+      box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+
+      &:after {
+          padding-left: 12px;
+          transition: padding 0.4s
+      }
+    }
 }

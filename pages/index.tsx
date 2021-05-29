@@ -3,8 +3,20 @@ import Header from "../components/header";
 import Card from "../components/card";
 import styles from "../styles/Home.module.scss";
 import Footer from "../components/footer";
+import { useRouter } from 'next/router'
+import Link from "next/link";
+
+
 
 export default function Home() {
+
+  const router = useRouter();
+
+  function handleClick( href:string){
+    router.push(href)
+  }
+
+
   return (
     <div>
       <Head>
@@ -15,16 +27,24 @@ export default function Home() {
       <Header></Header>
 
       <main className={styles.main}>
-        <h3>Hello 👋</h3>
-        <h3>I'm David, a Product Designer on InfluxData.</h3>
-        <p> So far, I've: </p>
+        <section className= {styles.heroBlock}>
+        <div className={styles.gradientBackground}/>
+        <h3 className= {styles.hero}>
+          Design + Engineering <br/>
+          <p className={styles.subHeader}>currently at InfluxData (YC13)</p>
+        </h3>
+        <Link href='/about'> 
+          <a className={styles.anchor}> More about me &#8594;</a> 
+        </Link>
+        </section>
+        
+        <section className= {styles.workBlock}>
+        <p>I am responsible for : </p>
         <div className={styles.list}> 
-          <div className={styles.gradientBackground}/>
-          <Card theme='dark'>Led the development of an open-source design system &#8594;</Card>
-          <Card theme='dark'>Desinged to improve collaboration within engineering teams &#8594;</Card>
-          <Card theme='dark'>Improved the developer experience of a highly technical platform &#8594;</Card>
+          <Card theme='dark' onClick={() => handleClick('/about')}>Design, development, product vision, and evangelization of our open-source design system</Card>
+          <Card theme='dark' onClick={() => handleClick('/about')}>Deisgn, experimentation, and product vision for our data visualization experience</Card>
         </div>
-       
+        </section>
       </main>
       <Footer></Footer>
     </div>
