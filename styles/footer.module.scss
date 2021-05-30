@@ -1,7 +1,9 @@
 .footer {
     display:flex;
-    position: absolute;
+    //position: absolute;
+    margin-top: 32px;
     height: 128px;
+    bottom:0;
     text-align: center;
     justify-content: center;
     align-items: center;

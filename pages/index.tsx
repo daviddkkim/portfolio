@@ -38,12 +38,11 @@ export default function Home() {
         <section className= {styles.workBlock}>
         <p>I am responsible for : </p>
         <div className={styles.list}> 
-          <Card theme='dark' onClick={() => handleClick('/work/design-system')}><p> Design, development, product vision, and evangelization of our open-source design system.</p><span className={styles.more}>Learn More</span></Card>
-          <Card theme='dark' onClick={() => handleClick('/work/product-design')}><p>Deisgn, growth, and product vision for our data visualization experience.</p>  <span className={styles.more}> Learn More</span></Card>
+          <Card theme='dark' onClick={() => handleClick('/work/influxdata/design-system')}><p> Design, development, product vision, and evangelization of our open-source design system.</p><span className={styles.more}>Learn More</span></Card>
+          <Card theme='dark' onClick={() => handleClick('/work/influxdata/product-design')}><p>Deisgn, growth, and product vision for our data visualization experience.</p>  <span className={styles.more}> Learn More</span></Card>
         </div>
         </section>
       </main>
-      <Footer></Footer>
     </div>
   );
 }
