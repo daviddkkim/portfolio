@@ -4,10 +4,16 @@
     flex-direction: column;
     row-gap: 16px;
     margin: 32px;
+    margin-top:16px;
+    margin-bottom:16px;
+}
+.topBlock {
+    height: 144px;
 }
 .wrapper {
     display:flex;
     flex-direction: column;
+    min-height: calc(100vh - 160px)
 }
 .breadCrumbList {
     text-align: left;
@@ -23,6 +29,10 @@
     a {
         font-size: 16px;
     }
+}
+
+.badgeList {
+    margin-top: 16px;
 }
 .more {
     font-weight: 500;

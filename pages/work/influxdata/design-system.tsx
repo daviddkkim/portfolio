@@ -20,7 +20,7 @@ export default function DesignSystem() {
     {' / '}
     <a className={styles.breadCrumb} onClick= {() => router.push('/work')}>work</a>
     {' / '}
-    <a className={styles.breadCrumb} onClick= {() => router.push('/work/influxdata')}>influxdata</a>
+    <a>influxdata</a>
     {' / '}
     <a>design-system</a>
 

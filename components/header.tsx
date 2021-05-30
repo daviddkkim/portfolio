@@ -10,7 +10,7 @@ export default function Header() {
         </nav>
         </Link>
       <nav>
-        <Link href="/">
+        <Link href="/work">
           <a className={styles.subItem}>Work</a>
         </Link>
         <Link href="/about">

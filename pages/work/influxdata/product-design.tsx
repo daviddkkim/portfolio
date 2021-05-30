@@ -19,7 +19,7 @@ export default function ProductDesign() {
     {' / '}
     <a className={styles.breadCrumb} onClick= {() => router.push('/work')}>work</a>
     {' / '}
-    <a className={styles.breadCrumb} onClick= {() => router.push('/influxdata')}>influxdata</a>
+    <a>influxdata</a>
     {' / '}
     <a>product-design</a>
 

@@ -1,0 +1,62 @@
+.wrapper{
+    margin:32px;
+    min-height: calc(100vh - 160px);
+}
+
+.externalLink {
+    font-weight:400;
+    text-decoration: underline;
+    color: #828fff;
+}
+
+.sectionalHeader{
+    color: #ffffff;
+}
+
+.heroImage {
+    margin-top:32px;
+    margin-bottom: 32px;
+}
+.heroImageMultiple {
+   display:flex;
+   margin-top:32px;
+    margin-bottom: 32px;
+    column-gap: 32px;
+}
+.socialMediaList {
+    padding-left: 0px;
+    li{
+    cursor: pointer;
+    border-radius:50px;
+    margin-right: 16px;
+    list-style-type: none;
+    color: #828fff;
+    &:after {
+        padding-left: 4px;   
+           content: '→';
+           font-weight: 500;
+           color: #828fff;
+    }
+  
+    &:hover {
+      color: #BFC6FF;
+      &:after {
+        color: #BFC6FF;
+        padding-left: 12px;
+        transition: padding 0.4s;
+        
+    }
+    }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .wrapper{
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+  }
+  
