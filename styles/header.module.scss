@@ -8,17 +8,42 @@
   margin-right: 32px;
   height: 64px;
   //background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(5px);
   z-index:2;
 }
 
 .logo {
-    font-weight: 600;
+    position:relative;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.logoAccent {
+  position:absolute;
+  top: 50%;
+  background-color: #828fff;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  opacity: 80%;
+  height: 12px;
+  width: 64.72px;
+  cursor: pointer;
+
 }
 
 .subItem {
-    margin-left: 12px;
+    margin-left: 16px;
     font-weight:400;
+    color:#95a2b3;
+    &:hover {
+      color: #D9DEE3;
+    }
+}
+@media only screen and (min-width: 520px) {
+  .logoAccent {
+    width: 82.64px;
+  }
+
 }
 
 @media only screen and (min-width: 900px) {

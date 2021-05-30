@@ -1,0 +1,76 @@
+.banner {
+    height: 50vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    position: relative;
+
+    
+}
+
+.pop {
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    filter: blur(25px);
+    animation: .8s cubic-bezier(0.6, 0, 0.15, 1) 0s 1 normal both running;
+    animation-name: popping;
+
+}
+
+.static {
+    position: absolute;
+    height: 266px;
+    width: 266px;
+    border: 8px solid rgba(0,0,0,0.1);
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+    border-radius: 12px;
+}
+
+.gradientBackground {
+    position: absolute;
+    height: 256px;
+    width: 256px;
+    background: radial-gradient(98.19% 103.21% at 2.69% 5.21%, #3BE2B2 0%, #7A79F4 67.7%, #EB4BB9 100%);
+    animation: .8s cubic-bezier(0.6, 0, 0.15, 1) normal ;
+    animation-name: fadein;
+    border-radius:12px;
+}
+
+.gradient-darkSwirl{
+    background: radial-gradient(98.19% 103.21% at 2.69% 5.21%, #3BE2B2 0%, #7A79F4 67.7%, #EB4BB9 100%);
+}
+
+.gradient-pricklyPear{
+    background:  linear-gradient(135.77deg, #A4FDD2 0%, #7A79F4 45.78%, #FDA5D0 86.73%);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes popping {
+    0% {
+      transform: scale(0.5, 0.2);
+      opacity: 0;
+      animation-timing-function: ease-in;
+    } ;
+    10% {
+      transform: scale(0.6, 0.9);
+      opacity: 1;
+    } ;
+    92% {
+        transform: scale(20, 0.3);
+        opacity: 0;
+    };
+
+    100% {
+        transform: scale(1,2.5);
+        opacity: 1;
+        filter: blur(25px);
+    }
+  }

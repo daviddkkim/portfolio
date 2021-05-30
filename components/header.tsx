@@ -3,11 +3,12 @@ import styles from "../styles/header.module.scss";
 export default function Header() {
   return (
     <header className={styles.header}>
-        <nav> 
-            <Link href="/">
-                <a className={ styles.logo}>David Kim</a>
-            </Link>
+        <Link href="/">
+        <nav className={ styles.logo}> 
+                <a>David Kim</a>
+                <div className={styles.logoAccent}></div>
         </nav>
+        </Link>
       <nav>
         <Link href="/">
           <a className={styles.subItem}>Work</a>

@@ -6,7 +6,7 @@ import React,{MouseEvent} from 'react'
 const className = classNames.bind(styles);
 
 type CardProps = {
-    children: string | Node,
+    children: React.ReactNode,
     title?: string;
     //make this an actual type to make it robust;
     theme: string;
@@ -27,7 +27,7 @@ const cardStyles = className(
 return (
     <div onClick= {props.onClick} className={cardStyles}>
             
-          <span> {props.children} </span>
+          <span className={styles.cardContent}> {props.children} </span>
     </div>
   );
 }

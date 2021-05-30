@@ -7,7 +7,7 @@
 }
 
 .card-dark {
-    border: 1px solid rgba(255,255,255, 0.1);
+    border: 1px solid rgba(255,255,255, 0.05);
     width: 100%;
     padding: 16px;
     border-radius: 4px;
@@ -16,18 +16,17 @@
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 }
 
-.card-link {
-    &:after {
-        content: '→';
-    }
+.card-link{
+
     &:hover{
       cursor:pointer;
       background-color: rgba(255,255,255, 0.1);
       box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
-
-      &:after {
-          padding-left: 12px;
-          transition: padding 0.4s
+      color: #D9DEE3;
+      .cardContent {
+          p{
+        color:#D9DEE3 ;
+          }
       }
     }
 }
