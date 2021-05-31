@@ -1,6 +1,5 @@
 import styles from "../../../../styles/contentPage.module.scss";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Annotator() {
@@ -32,7 +31,12 @@ export default function Annotator() {
           <a>annotations</a>
         </div>
         <section className={styles.heroImage}>
-          <Image src="/Annotations.gif" width={1440} height={900}></Image>
+          <Image
+            src="/Annotations.gif"
+            width={1440}
+            height={900}
+            priority={true}
+          ></Image>
         </section>
         <h3 className={styles.sectionalHeader}>
           Empowering teams to collaborate and share data insights
