@@ -33,8 +33,8 @@ export default function Annotator() {
         <section className={styles.heroImage}>
           <Image
             src="/Annotations.gif"
-            width={1440}
-            height={900}
+            width={896}
+            height={738}
             priority={true}
           ></Image>
         </section>
