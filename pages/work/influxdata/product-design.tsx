@@ -26,7 +26,7 @@ export default function ProductDesign() {
     </div>
     <section className={styles.contents}>
     <Card theme='dark' onClick={() => handleClick('/work/influxdata/product-design/annotations')}> <h6 className= {styles.header}>Annotations</h6> <p>Empowering teams to collaborate and share data insights.</p><span className={styles.more}>Learn More</span></Card>
-    <Card theme='dark' onClick={() => handleClick('/work/influxdata/product-design/annotations')}> <h6 className= {styles.header}>Static Legend</h6> <p>Enabling teams to better understand data vizualizations. *Not shipped yet.</p><span className={styles.more}>Learn More</span></Card>
+    <Card theme='dark' onClick={() => handleClick('/work/influxdata/product-design/staticlegend')}> <h6 className= {styles.header}>Static Legend</h6> <p>Enabling teams to better understand data vizualizations. *Not shipped yet.</p><span className={styles.more}>Learn More</span></Card>
 
     </section>
     </div>

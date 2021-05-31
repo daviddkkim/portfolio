@@ -63,7 +63,7 @@ export default function Work() {
         <Card
           theme="dark"
           onClick={() =>
-            handleClick("/work/influxdata/product-design/annotations")
+            handleClick("/work/influxdata/product-design/staticlegend")
           }
         >
           {" "}

@@ -34,6 +34,8 @@ export default function Clockface(){
             <p>
                Since taking over the design system, I've designed and coded a few new components (i.e, <a className= {styles.externalLink} href="https://influxdata.github.io/clockface/?path=/story/components-pagination-paginationnav--paginationnav" rel="noopener noreferrer" target="_blank">Pagination component</a>). I've also tweaked a few of our existing components to provide a better developer experience for our library consumers and user experience for our application users (i.e, 
                <a className= {styles.externalLink} href="https://influxdata.github.io/clockface/?path=/story/layout-draggable-resizer-examples--2-panels" rel="noopener noreferrer" target="_blank">Draggable Resizer component</a>).
+                <br/>
+                <br/>
                 <p>
                 I've curated and executed on a research agenda to problem solve how to increase adoption on our design system within our company. Following this research, I created a Figma Plugin to address research findings. Learn more about what I did <Link href={"/work/influxdata/design-system/annotator"}><a className= {styles.externalLink}> here</a></Link>.
                 </p>

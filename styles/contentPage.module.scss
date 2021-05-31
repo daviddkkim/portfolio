@@ -3,6 +3,10 @@
     min-height: calc(100vh - 160px);
 }
 
+.blur {
+   filter: blur(2px); 
+}
+
 .externalLink {
     font-weight:400;
     text-decoration: underline;
