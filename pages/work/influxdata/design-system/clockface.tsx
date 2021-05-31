@@ -1,5 +1,6 @@
 import styles from "../../../../styles/contentPage.module.scss"
 import Image from 'next/image'
+import Link from "next/link"
 
 export default function Clockface(){
     return (
@@ -12,7 +13,7 @@ export default function Clockface(){
             </section>
             <h6 className= {styles.sectionalHeader}> My role</h6>
             <ul>
-                <li>Design System Lead - I own the design, engineering, vision, and evangelization of Clockface </li>
+                <li>Design System Lead - I own the design, engineering, vision, and evangelization of Clockface. </li>
                 <li>I took over this responsibility when I joined the company on March 2021.</li>
             </ul>
             <h6 className= {styles.sectionalHeader}> Introduction</h6>
@@ -28,6 +29,14 @@ export default function Clockface(){
             <p>
                 Some usecases for time-series data are self-driving cars, alternative energy research, and space exploration. Paralleling the usecase, we've always strived for a futuristic look and feel.
                 We want to drive our design system forward such that when you are watching movies like The Martian, Tron or Ready Player One, you could imagine our design system being used.
+            </p>
+            <h6 className= {styles.sectionalHeader}> My contributions</h6>
+            <p>
+               Since taking over the design system, I've designed and coded a few new components (i.e, <a className= {styles.externalLink} href="https://influxdata.github.io/clockface/?path=/story/components-pagination-paginationnav--paginationnav" rel="noopener noreferrer" target="_blank">Pagination component</a>). I've also tweaked a few of our existing components to provide a better developer experience for our library consumers and user experience for our application users (i.e, 
+               <a className= {styles.externalLink} href="https://influxdata.github.io/clockface/?path=/story/layout-draggable-resizer-examples--2-panels" rel="noopener noreferrer" target="_blank">Draggable Resizer component</a>).
+                <p>
+                I've curated and executed on a research agenda to problem solve how to increase adoption on our design system within our company. Following this research, I created a Figma Plugin to address research findings. Learn more about what I did <Link href={"/work/influxdata/design-system/annotator"}><a className= {styles.externalLink}> here</a></Link>.
+                </p>
             </p>
             <h6 className= {styles.sectionalHeader}> Relevant Links</h6>
             <ul className={styles.socialMediaList}>
