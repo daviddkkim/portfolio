@@ -2,10 +2,12 @@
     display:flex;
     //grid-template-rows: 50% 50%;
     flex-direction: column;
-    row-gap: 16px;
     margin: 32px;
-    margin-top:16px;
-    margin-bottom:16px;
+    margin-top:0px;
+    margin-bottom:0px;
+    & div {
+        margin-bottom:16px;
+    }
 }
 .topBlock {
     height: 144px;
@@ -57,7 +59,6 @@
 
   .header {
       color: #ffffff;
-      font-size: 16px;
   }
 
 
