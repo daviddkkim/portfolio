@@ -1,7 +1,11 @@
 import styles from "../styles/workPage.module.scss";
 import Card from "../components/card";
 import { useRouter } from "next/router";
-import Badge from "../components/badge"
+import Badge from "../components/badge";
+import classNames from "classnames/bind";
+
+const className = classNames.bind(styles);
+
 export default function Work() {
   const router = useRouter();
 
@@ -10,8 +14,14 @@ export default function Work() {
   }
   return (
     <div className={styles.wrapper}>
-      <section className= {styles.topBlock}>
-      </section>
+      <section className={styles.topBlock}></section>
+      <div className={styles.breadCrumbList}>
+        <a className={styles.breadCrumb} onClick={() => router.push("/")}>
+          home
+        </a>
+        {" / "}
+        <a>work</a>
+      </div>
       <section className={styles.contents}>
         <Card
           theme="dark"
@@ -24,8 +34,8 @@ export default function Work() {
           <p>InfluxData's open-source design system for web products.</p>
           <span className={styles.more}>Learn More</span>
           <div className={styles.badgeList}>
-          <Badge>InfluxData</Badge>
-          <Badge>Design System</Badge>
+            <Badge>InfluxData</Badge>
+            <Badge>Design System</Badge>
           </div>
         </Card>
         <Card
@@ -39,8 +49,8 @@ export default function Work() {
           <p>A Figma plugin to bridge the gap in design hand-off. </p>
           <span className={styles.more}>Learn More</span>
           <div className={styles.badgeList}>
-          <Badge>InfluxData</Badge>
-          <Badge>Design System</Badge>
+            <Badge>InfluxData</Badge>
+            <Badge>Design System</Badge>
           </div>
         </Card>
       </section>
@@ -56,8 +66,8 @@ export default function Work() {
           <p>Empowering teams to collaborate and share data insights.</p>
           <span className={styles.more}>Learn More</span>
           <div className={styles.badgeList}>
-          <Badge>InfluxData</Badge>
-          <Badge>Product Design</Badge>
+            <Badge>InfluxData</Badge>
+            <Badge>Product Design</Badge>
           </div>
         </Card>
         <Card
@@ -74,8 +84,8 @@ export default function Work() {
           </p>
           <span className={styles.more}>Learn More</span>
           <div className={styles.badgeList}>
-          <Badge>InfluxData</Badge>
-          <Badge>Product Design</Badge>
+            <Badge>InfluxData</Badge>
+            <Badge>Product Design</Badge>
           </div>
         </Card>
       </section>

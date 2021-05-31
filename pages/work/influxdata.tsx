@@ -1,6 +1,3 @@
 export default function InfluxData() {
-
-    return (
-        <div>influxdata</div>
-    )
+  return <div>influxdata</div>;
 }

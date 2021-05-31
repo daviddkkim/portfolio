@@ -1,85 +1,84 @@
 .contents {
-    display:flex;
-    //grid-template-rows: 50% 50%;
-    flex-direction: column;
-    margin: 32px;
-    margin-top:0px;
-    margin-bottom:0px;
-    & div {
-        margin-bottom:16px;
-    }
+  display: flex;
+  //grid-template-rows: 50% 50%;
+  flex-direction: column;
+  margin: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  & div {
+    margin-bottom: 16px;
+  }
 }
 .topBlock {
-    height: 144px;
+  height: 96px;
 }
 .wrapper {
-    display:flex;
-    flex-direction: column;
-    min-height: calc(100vh - 160px)
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 160px);
 }
 .breadCrumbList {
-    text-align: left;
-    margin: 32px;
-    color: #95a2b3;
-    .breadCrumb {
-        cursor: pointer;
-        text-decoration: underline;
-        &:hover {
-            color: #D9DEE3;
-        }
+  text-align: left;
+  margin: 32px;
+  color: #95a2b3;
+  .breadCrumb {
+    cursor: pointer;
+    text-decoration: underline;
+    &:hover {
+      color: #d9dee3;
     }
-    a {
-        font-size: 16px;
-    }
+  }
+  a {
+    font-size: 16px;
+  }
 }
 
 .badgeList {
-    margin-top: 16px;
+  margin-top: 16px;
+  margin-bottom: 0px !important;
 }
 .more {
+  font-weight: 500;
+  color: #828fff;
+  &:after {
+    padding-left: 4px;
+    content: "→";
     font-weight: 500;
     color: #828fff;
+  }
+
+  &:hover {
+    color: #bfc6ff;
     &:after {
-        padding-left: 4px;   
-           content: '→';
-           font-weight: 500;
-           color: #828fff;
-    }
-  
-    &:hover {
-      color: #BFC6FF;
-      &:after {
-        color: #BFC6FF;
-        padding-left: 12px;
-        transition: padding 0.4s;
-        
-    }
+      color: #bfc6ff;
+      padding-left: 12px;
+      transition: padding 0.4s;
     }
   }
+}
 
-  .header {
-      color: #ffffff;
-  }
-
+.header {
+  color: #ffffff;
+}
 
 @media only screen and (min-width: 900px) {
-    .contents{
-     flex-direction:row;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      & div {
-        margin-bottom:32px;
-        margin-left: 16px;
-        margin-right: 16px;
+  .contents {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 32px;
+    column-gap: 32px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    & div {
+      margin-bottom: 0px;
     }
-    }
-
-    .breadCrumbList{
-        width:800px;
-        margin-left: auto;
-         margin-right: auto;
-    }
-
   }
-  
+
+  .breadCrumbList {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

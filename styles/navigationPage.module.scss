@@ -1,26 +1,25 @@
 .socialMediaList {
-    padding-left: 0px;
-    li{
+  padding-left: 0px;
+  li {
     cursor: pointer;
-    border-radius:50px;
+    border-radius: 50px;
     margin-right: 16px;
     list-style-type: none;
     color: #828fff;
     &:after {
-        padding-left: 4px;   
-           content: '→';
-           font-weight: 500;
-           color: #828fff;
+      padding-left: 4px;
+      content: "→";
+      font-weight: 500;
+      color: #828fff;
     }
-  
+
     &:hover {
-      color: #BFC6FF;
+      color: #bfc6ff;
       &:after {
-        color: #BFC6FF;
+        color: #bfc6ff;
         padding-left: 12px;
         transition: padding 0.4s;
-        
+      }
     }
-    }
-    }
+  }
 }

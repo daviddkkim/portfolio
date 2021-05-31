@@ -9,17 +9,17 @@
   height: 64px;
   //background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
-  z-index:2;
+  z-index: 2;
 }
 
 .logo {
-    position:relative;
-    font-weight: 500;
-    cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .logoAccent {
-  position:absolute;
+  position: absolute;
   top: 50%;
   background-color: #828fff;
   filter: blur(6px);
@@ -28,33 +28,31 @@
   height: 12px;
   width: 64.72px;
   cursor: pointer;
-
 }
 
 .subItem {
-    margin-left: 16px;
-    font-weight:400;
-    color:#95a2b3;
-    &:hover {
-      color: #D9DEE3;
-    }
+  margin-left: 16px;
+  font-weight: 400;
+  color: #95a2b3;
+  &:hover {
+    color: #d9dee3;
+  }
 }
 @media only screen and (min-width: 520px) {
   .logoAccent {
     width: 82.64px;
   }
-
 }
 
 @media only screen and (min-width: 900px) {
-  .header{
+  .header {
     margin-left: 64px;
     margin-right: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .header{
+  .header {
     margin-left: 128px;
     margin-right: 128px;
   }

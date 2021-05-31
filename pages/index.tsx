@@ -2,18 +2,15 @@ import Head from "next/head";
 import Card from "../components/card";
 import styles from "../styles/Home.module.scss";
 import Footer from "../components/footer";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 import Link from "next/link";
 
-
 export default function Home() {
-
   const router = useRouter();
 
-  function handleClick( href:string){
-    router.push(href)
+  function handleClick(href: string) {
+    router.push(href);
   }
-
 
   return (
     <div>
@@ -24,23 +21,42 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <section className= {styles.heroBlock}>
-        <h3 className= {styles.hero}>
-          Design + Engineering <br/>
-          <p className={styles.subHeader}>currently at InfluxData (YC13)</p>
-        </h3>
-        <Link href='/about'> 
-          <a className={styles.more}> More about me</a> 
-        </Link>
-        <div className={styles.gradientBackground}/>
+        <section className={styles.heroBlock}>
+          <h3 className={styles.hero}>
+            Design + Engineering <br />
+            <p className={styles.subHeader}>currently at InfluxData (YC13)</p>
+          </h3>
+          <Link href="/about">
+            <a className={styles.more}> More about me</a>
+          </Link>
+          <div className={styles.gradientBackground} />
         </section>
-        
-        <section className= {styles.workBlock}>
-        <p>I am responsible for : </p>
-        <div className={styles.list}> 
-          <Card theme='dark' onClick={() => handleClick('/work/influxdata/design-system')}><p> Design, development, product vision, and evangelization of our open-source design system.</p><span className={styles.more}>Learn More</span></Card>
-          <Card theme='dark' onClick={() => handleClick('/work/influxdata/product-design')}><p>Deisgn, growth, and product vision for our data visualization experience.</p>  <span className={styles.more}> Learn More</span></Card>
-        </div>
+
+        <section className={styles.workBlock}>
+          <p>I am responsible for : </p>
+          <div className={styles.list}>
+            <Card
+              theme="dark"
+              onClick={() => handleClick("/work/influxdata/design-system")}
+            >
+              <p>
+                {" "}
+                Design, development, product vision, and evangelization of our
+                open-source design system.
+              </p>
+              <span className={styles.more}>Learn More</span>
+            </Card>
+            <Card
+              theme="dark"
+              onClick={() => handleClick("/work/influxdata/product-design")}
+            >
+              <p>
+                Deisgn, growth, and product vision for our data visualization
+                experience.
+              </p>{" "}
+              <span className={styles.more}> Learn More</span>
+            </Card>
+          </div>
         </section>
       </main>
     </div>

@@ -1,26 +1,25 @@
 .badge {
-    position:relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height:24px;
-    border-radius: 5px;
-    margin-right:8px;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 6px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  border-radius: 5px;
+  margin-right: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 6px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 }
 
-.border-default{
-    color: #95a2b3;
-    border: 1px solid #95a2b3;
+.border-default {
+  color: #95a2b3;
+  border: 1px solid #95a2b3;
 
-   /*  &:hover {
+  /*  &:hover {
         
         color: #D9DEE3;
         border: 1px solid #D9DEE3;
     } */
 }
-
