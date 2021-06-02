@@ -52,8 +52,10 @@ export default function Annotator() {
           next to the components.
         </p>
 
-        <section className={styles.heroImageMultiple}>
-          <Image src="/plugin.gif" width={1440} height={900}></Image>
+        <section className={styles.heroImag}>
+          <video className={styles.heroImage} autoPlay muted loop>
+            <source src={"/plugin.mp4"} type="video/mp4" />
+          </video>
         </section>
         <h6 className={styles.sectionalHeader}> Why?</h6>
         <p>

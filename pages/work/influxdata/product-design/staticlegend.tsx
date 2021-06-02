@@ -32,11 +32,9 @@ export default function Staticlegend() {
         </div>
         <section className={styles.heroImage}>
           <div className={styles.blur}>
-            <Image
-              src="/staticlegend__psd.gif"
-              width={1440}
-              height={900}
-            ></Image>
+            <video className={styles.heroImage} autoPlay muted loop>
+              <source src={"/staticlegend.mp4"} type="video/mp4" />
+            </video>
           </div>
         </section>
         <h3>Coming Soon</h3>

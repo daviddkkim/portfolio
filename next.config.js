@@ -5,12 +5,12 @@ module.exports = withOptimizedImages({
   optimizeImages: true,
   gifsicle: {
     interlaced: true,
-    optimizationLevel: 3
+    optimizationLevel: 3,
   },
   optipng: {
-    optimizationLevel: 3
+    optimizationLevel: 3,
   },
   images: {
-    domains: ["daviddkkim.com"]
-  }
+    domains: ["daviddkkim.com"],
+  },
 });

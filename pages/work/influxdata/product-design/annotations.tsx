@@ -31,12 +31,9 @@ export default function Annotator() {
           <a>annotations</a>
         </div>
         <section className={styles.heroImage}>
-          <Image
-            src="/Annotations.gif"
-            width={896}
-            height={738}
-            priority={true}
-          ></Image>
+          <video className={styles.heroImage} autoPlay muted loop>
+            <source src={"/Annotations.mp4"} type="video/mp4" />
+          </video>
         </section>
         <h3 className={styles.sectionalHeader}>
           Empowering teams to collaborate and share data insights
@@ -91,7 +88,9 @@ export default function Annotator() {
           iterate on the next versions.
         </p>
         <section className={styles.heroImageMultiple}>
-          <Image src="/Showme1.gif" width={1440} height={900}></Image>
+          <video className={styles.heroImage} autoPlay muted loop>
+            <source src={"/showme1.mp4"} type="video/mp4" />
+          </video>{" "}
         </section>
         <h6 className={styles.sectionalHeader}> Relevant Links</h6>
         <ul className={styles.socialMediaList}>
