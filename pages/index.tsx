@@ -33,7 +33,7 @@ export default function Home() {
         </section>
 
         <section className={styles.workBlock}>
-          <p>I am responsible for : </p>
+          <p>At work, I am responsible for: </p>
           <div className={styles.list}>
             <Card
               theme="dark"
@@ -55,6 +55,17 @@ export default function Home() {
                 experience.
               </p>{" "}
               <span className={styles.more}> Learn More</span>
+            </Card>
+          </div>
+          <p>I am passionate about: </p>
+          <div className={styles.list}>
+            <Card theme="dark" onClick={() => handleClick("/about")}>
+              <p>
+                {" "}
+                Designing for developer experience, multi-touch points (UI, CLI,
+                and API), and all things design systems.
+              </p>
+              <span className={styles.more}> More about me</span>
             </Card>
           </div>
         </section>

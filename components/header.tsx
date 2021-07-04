@@ -13,6 +13,9 @@ export default function Header() {
         <Link href="/work">
           <a className={styles.subItem}>Work</a>
         </Link>
+        <Link href="/exploration">
+          <a className={styles.subItem}>Explorations</a>
+        </Link>
         <Link href="/about">
           <a className={styles.subItem}>About</a>
         </Link>
