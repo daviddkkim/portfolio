@@ -57,17 +57,6 @@ export default function Home() {
               <span className={styles.more}> Learn More</span>
             </Card>
           </div>
-          <p>I am passionate about: </p>
-          <div className={styles.list}>
-            <Card theme="dark" onClick={() => handleClick("/about")}>
-              <p>
-                {" "}
-                Designing for developer experience, multi-touch points (UI, CLI,
-                and API), and all things design systems.
-              </p>
-              <span className={styles.more}> More about me</span>
-            </Card>
-          </div>
         </section>
       </main>
     </div>
